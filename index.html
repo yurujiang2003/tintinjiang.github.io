@@ -17,8 +17,8 @@
 
     .grid-container {
       display: grid;
-      /* Avatar at far left, text in the middle */
-      grid-template-columns: 25% 55% 20% 0%;
+      /* Avatar at far left, wider text column */
+      grid-template-columns: 25% 65% 15% 0%;
       grid-template-rows: auto auto;
       padding: 10px;
       justify-content: center;
@@ -248,15 +248,20 @@
       overflow: hidden;
       background: linear-gradient(135deg, rgba(67, 56, 202, 0.12), rgba(59, 130, 246, 0.18));
       border: 3px solid rgba(15, 23, 42, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 160px;
     }
 
     .pub-thumb img {
       display: block;
-      width: 100%;
-      height: auto;      /* 高度自适应，完整展示图片 */
+      max-height: 160px;
+      width: auto;
+      height: auto;
       object-fit: contain;
       padding-top: 0;
-      margin: 0;
+      margin: 0 auto;
     }
 
     .pub-meta h3 {
@@ -381,9 +386,42 @@
           <a class="pill" href="https://arxiv.org/abs/2506.04721" target="_blank">Paper</a>
           <a class="pill" href="https://github.com/yurujiang2003/sparta" target="_blank">Code</a>
   </div>
-        <p>
-          Multiple LMs form a sparta tribe to battle against, evaluate, and learn from each other.
-    </p>
+  </div>
+    </article>
+
+    <article class="pub-card">
+      <div class="pub-thumb">
+        <img src="file/protpainter.png" alt="ProtPainter Teaser">
+  </div>
+      <div class="pub-meta">
+        <h3>ProtPainter: Draw or Drag Protein via Topology-guided Diffusion</h3>
+        <div class="pub-authors">
+          Zhengxi Lu, Shizhuo Cheng, <b>Yuru Jiang</b>, Yan Zhang, Min Zhang
+</div>
+        <div class="pub-venue">
+          ICLR 2025
+  </div>
+        <div class="pub-actions">
+          <a class="pill" href="https://arxiv.org/abs/2504.14274" target="_blank">Paper</a>
+  </div>
+</div>
+    </article>
+
+    <article class="pub-card">
+      <div class="pub-thumb">
+        <img src="file/findver.png" alt="FinDVer Teaser">
+  </div>
+      <div class="pub-meta">
+        <h3>FinDVer: Explainable Claim Verification over Long and Hybrid-Content Financial Documents</h3>
+        <div class="pub-authors">
+          Yilun Zhao, Yitao Long, <b>Yuru Jiang</b>, Chengye Wang, Weiyuan Chen, Hongjun Liu, Yiming Zhang, Xiangru Tang, Chen Zhao, Arman Cohan
+  </div>
+        <div class="pub-venue">
+          EMNLP 2024
+</div>
+        <div class="pub-actions">
+          <a class="pill" href="https://arxiv.org/abs/2411.05764" target="_blank">Paper</a>
+  </div>
   </div>
     </article>
   </div>
